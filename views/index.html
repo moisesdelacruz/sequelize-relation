@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>archivos en nodejs/express</title>
+    <!--link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet" /-->
+    <link rel="stylesheet" href="/index.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Register Users</a></li>
+          <li><a href="/users">See Users</a></li>
+        </ul>
+      </nav>
+	    <div class="span10">
+	      <h1>Register Users and Superusers</h1>
+	      <form action="/upload" method="post" id="upload-form" enctype="multipart/form-data">
+	        <fieldset>
+	          <label>Select a photo of profile</label>
+            <label for="image"><img src="/image/photo.png" width="140" height="140" class="img-circle" id="photo" title="Select photo"/></label>
+	          <input id="image" type="file" name="image">
+            <br>
+            <select name="role">
+            </select>
+	          <br>
+            <input type="text" name="username" placeholder="Username" />
+	          <br>
+            <input type="email" name="email" placeholder="Email" />
+            <br>
+            <input type="password" name="password" placeholder="Password" />
+            <br>
+	          <button type="submit" class="btn btn-danger">Subir</button>
+	        </fieldset>
+	      </form>
+	    </div>
+
+      <div class="span10">
+	      <h1>Register Roles On Nodejs</h1>
+	      <form action="/upload/role" method="post" id="upload-role" enctype="multipart/form-data">
+	        <fieldset>
+            <input type="text" name="nameRole" placeholder="Name of role" />
+            <br>
+	          <button type="submit" class="btn btn-danger">Subir</button>
+	        </fieldset>
+	      </form>
+	    </div>
+    </div>
+    <script src="/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
+  </body>
+</html>

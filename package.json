@@ -1,0 +1,23 @@
+{
+  "name": "ejemplo",
+  "version": "1.0.0",
+  "description": "example realation of tables with sequelizer and driving of images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p static/photos",
+    "start": "nodemon server"
+  },
+  "author": "Moises De La Cruz <moises-jesus_15@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "connect-multiparty": "^2.0.0",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "pg": "^4.5.5",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.23.2",
+    "socket.io": "^1.4.6"
+  }
+}
